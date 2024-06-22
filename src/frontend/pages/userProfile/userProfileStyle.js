@@ -30,6 +30,11 @@ export const ProfileBox = styled.div`
     font-size: 14px;
     margin-bottom: 15px;
   }
+  @media (width < 440px) {
+    width: 90vw;
+    box-sizing: border-box;
+    height: auto;
+  }
 `;
 
 export const ProfileButtons = styled.div`
@@ -46,6 +51,7 @@ export const LogOutButton = styled.button`
   transition: 0.4s;
   position: relative;
   margin-top: 30px;
+  margin-right: 10px;
   &:hover {
     background-color: rgba(255, 0, 0, 0.5);
   }
@@ -60,7 +66,6 @@ export const DeliveryButton = styled.button`
   transition: 0.4s;
   position: relative;
   margin-top: 30px;
-  margin-left: 10px;
   &:hover {
     background-color: #222;
   }

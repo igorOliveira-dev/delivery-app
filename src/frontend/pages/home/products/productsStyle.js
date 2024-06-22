@@ -17,10 +17,21 @@ export const Product = styled.div`
   & > p {
     margin-bottom: 10px;
   }
+  @media (width < 520px) {
+    width: 170px;
+    margin: 5px;
+    font-size: 14px;
+  }
+  @media (width < 400px) {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const ProductPrice = styled.p`
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bolder;
 `;
 
@@ -28,6 +39,10 @@ export const ProductImage = styled.img`
   height: 200px;
   width: 200px;
   margin-bottom: 20px;
+  @media (width < 520px) {
+    width: 170px;
+    height: 170px;
+  }
 `;
 
 export const AddCartBtn = styled.button`
